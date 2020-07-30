@@ -36,6 +36,22 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .container {
+    width: 93.3%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
 .page {
   height: 100%;
   font-family: "Open Sans", sans-serif, "Arial";
@@ -229,7 +245,23 @@ img {
   grid-column-start: 1;
   grid-column-end: -1;
 }
-.advantages__title {
+.advantages__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .advantages__wrapper {
+    width: 93.3%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+.advantages__text {
   color: #283645;
   font-size: 24px;
   line-height: 120%;
@@ -243,7 +275,6 @@ img {
 @media (min-width: 660px) {
   .advantages__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1200px) {
@@ -295,20 +326,20 @@ img {
     line-height: 30px;
     text-align: center;
   }
+  .advantages__description--desktop {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+  }
 }
-.advantages__description-desktop {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: left;
-}
-.advantages__tablet {
+.advantages__title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: left;
 }
 @media (min-width: 1200px) {
-  .advantages__tablet {
+  .advantages__title {
     line-height: 30px;
     text-align: center;
   }
@@ -417,10 +448,25 @@ img {
   line-height: 18px;
   font-weight: 400;
 }
+.gallery__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .gallery__wrapper {
+    width: 93.3%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
 .gallery__list {
   display: grid;
   justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 @media (min-width: 660px) {
@@ -469,7 +515,6 @@ img {
   font-weight: 400;
   color: #283645;
   text-align: left;
-  word-break: break-all;
 }
 .gallery__likes {
   font-size: 12px;
